@@ -1,24 +1,17 @@
+import PersistentDrawerLeft from './component/Drawer';
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {useSelector,useDispatch} from 'react-redux'
+import IncrementDecrement from './reducers/Increment-Decrement';
+import Counters from './screens/Counters';
+// import Counter from './screens/Counter';
 
 function App() {
+ 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     {/* < PersistentDrawerLeft/> */}
+<Counters/>
     </div>
   );
 }
