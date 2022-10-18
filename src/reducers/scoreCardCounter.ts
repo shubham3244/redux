@@ -1,9 +1,9 @@
-const initialState=0;
+const initialState=5;
   const changeScoreValue = (state=initialState,action:any) =>{
 switch(action.type)
 {
-  case 'Increment' : return state + 2;
-  case 'Decrement' : return state -2;
+  case 'Increments' : return state + 2;
+  case 'Decrements' : return state -2;
   default: return state;
 }
   }

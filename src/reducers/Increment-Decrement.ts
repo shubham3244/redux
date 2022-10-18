@@ -1,9 +1,14 @@
-const initialState=0;
+const initialState={
+  products:[]
+}
+const posts ={}
   const changeValue = (state=initialState,action:any) =>{
+    console.log(action?.payload);
+    
 switch(action.type)
 {
-  case 'Increment' : return state + 5;
-  case 'Decrement' : return state -5;
+  case 'Increment' : return {products:action};
+  case 'Decrement' : return {state}
   default: return state;
 }
   }

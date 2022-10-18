@@ -1,7 +1,9 @@
-export const incrNumber = ()=>{
+export const incrNumber = (product:any)=>{
+// console.log(product.data);]
 
 return {
-  type:'Increment'
+  type:'Increment',
+  payload:{product}
 }
 }
 export const decrNumber = ()=>{
@@ -12,7 +14,7 @@ export const decrNumber = ()=>{
   export const incrScoreNumber = ()=>{
 
     return {
-      type:'Incremens'
+      type:'Increments'
     }
     }
     export const decrScoreNumber = ()=>{
